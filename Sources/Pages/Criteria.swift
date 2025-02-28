@@ -1,7 +1,7 @@
 import Foundation
 import Ignite
 
-struct Home: StaticLayout {
+struct Criteria: StaticLayout {
     var title = "Our Criteria"
 
     var body: some HTML {
