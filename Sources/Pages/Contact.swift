@@ -1,8 +1,8 @@
 import Foundation
 import Ignite
 
-struct Criteria: StaticLayout {
-    var title = "Home"
+struct Contact: StaticLayout {
+    var title = "Contact Us"
 
     var body: some HTML {
         Text("Hello world!")

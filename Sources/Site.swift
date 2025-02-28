@@ -23,5 +23,11 @@ struct LedgePartners: Site {
     var author = "Ledge Partners"
 
     var homePage = Home()
+	var aboutPage = About()
+	var criteria = Criteria()
+	var contact = Contact()
+	var intermediaries = Intermediaries()
+	var owners = Owners()
+	
     var layout = MainLayout()
 }
