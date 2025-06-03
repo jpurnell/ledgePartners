@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="We evaluate opportunities based on five criteria: 1) integrity, 2) long-term outlook, 3) culture, 4) flexibility, and 5) management quality. We are committed to sustainable success through ethical stewardship and respectful collaboration." />
+    <meta name="author" content="Ledge Partners" />
+    <meta name="generator" content="Ignite v0.6.0" />
+    <title>Our Philosophy</title>
+    <link href="/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="/css/bootstrap-icons.min.css" rel="stylesheet" />
+    <link href="/css/ignite-core.min.css" rel="stylesheet" />
+    <link href="https://www.ledgepartners.com/values" rel="canonical" />
+    <script>(function() {
+    function getThemePreference() {
+        return localStorage.getItem('custom-theme') || 'auto';
+    }
+
+    function applyTheme(themeID) {
+        const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+        const lightThemeID = document.documentElement.getAttribute('data-light-theme') || 'light';
+        const darkThemeID = document.documentElement.getAttribute('data-dark-theme') || 'dark';
+        const actualThemeID = themeID === 'auto' ? (prefersDark ? darkThemeID : lightThemeID) : themeID;
+
+        document.documentElement.setAttribute('data-bs-theme', actualThemeID);
+        document.documentElement.setAttribute('data-theme-state', themeID);
+    }
+
+    function applySyntaxTheme() {
+        const syntaxTheme = getComputedStyle(document.documentElement)
+            .getPropertyValue('--syntax-highlight-theme').trim().replace(/"/g, '');
+
+        if (!syntaxTheme) return;
+
+        document.querySelectorAll('link[data-highlight-theme]').forEach(link => {
+            link.setAttribute('disabled', 'disabled');
+        });
+
+        const themeLink = document.querySelector(`link[data-highlight-theme="${syntaxTheme}"]`);
+        if (themeLink) {
+            themeLink.removeAttribute('disabled');
+        }
+    }
+
+    window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', e => {
+        const currentTheme = getThemePreference();
+        if (currentTheme === 'auto') {
+            applyTheme('auto');
+            applySyntaxTheme();
+        }
+    });
+
+    const savedTheme = getThemePreference();
+    applyTheme(savedTheme);
+    applySyntaxTheme();
+})();
+</script>
+    <meta property="og:site_name" content="Ledge Partners" />
+    <meta property="og:image" content="/images/background/gile_panorama.jpeg" />
+    <meta name="twitter:image" content="/images/background/gile_panorama.jpeg" />
+    <meta property="og:title" content="Our Philosophy" />
+    <meta name="twitter:title" content="Our Philosophy" />
+    <meta property="og:description" content="We evaluate opportunities based on five criteria: 1) integrity, 2) long-term outlook, 3) culture, 4) flexibility, and 5) management quality. We are committed to sustainable success through ethical stewardship and respectful collaboration." />
+    <meta name="twitter:description" content="We evaluate opportunities based on five criteria: 1) integrity, 2) long-term outlook, 3) culture, 4) flexibility, and 5) management quality. We are committed to sustainable success through ethical stewardship and respectful collaboration." />
+    <meta property="og:url" content="https://www.ledgepartners.com/values" />
+    <meta name="twitter:domain" content="ledgepartners.com" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:dnt" content="on" />
+    <meta name="description" content="Discover strategic opportunities with Ledge Partners, dedicated to investing in small to mid-market businesses across the Northeast US. We focus on identifying and acquiring promising enterprises that demonstrate strong growth potential. Partner with us to elevate your business to new heights—let’s create lasting value together!" />
+    <script src="https://www.googletagmanager.com/gtag/js?id=G-KX3Q54VR"></script>
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-KX3Q54VR');</script>
+    <link href="/css/main.css" rel="stylesheet" />
+  </head>
+  <body class="container">
+    <header>
+      <nav id="navigationBar" class="navbar navbar-expand-md" style="background-color: rgb(211 211 211 / 100%); padding-bottom: 16px" data-bs-theme="light">
+        <div class="container flex-wrap flex-lg-nowrap">
+          <div class="me-2 me-md-auto">
+            <a href="/" class="d-inline-flex align-items-center navbar-brand"> </a>
+            <a href="/" class="navbar-brand" aria-label="home"><img src="/images/logos/ledge_logo.svg" aria-label="" class="img-fluid mx-auto" style="width: 60px; height: 60px" /></a> 
+            <a href="/" class="navbar-brand"><h3 style="font-family: princeton_monticello; font-size: calc(1.2rem + .5vw); color: #EE7F2D; line-height: 2rem; margin-bottom: 0rem; text-align: center; class=" text-center mx-auto"></h3> <h4 style="font-family: princeton_monticello; font-size: calc(0.55rem + 0.5vw); color: var(--bs-dark); line-height: 1rem; padding: 0em; margin-bottom: 0rem; letter-spacing: .10rem; class=" text-center mx-auto"></h4></a>
+          </div>
+          <button type="button" class="navbar-toggler btn" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+          <div id="navbarCollapse" class="collapse navbar-collapse">
+            <ul class="navbar-nav mb-2 mb-md-0 col justify-content-end">
+              <li class="nav-item"><a href="/home" class="nav-link text-nowrap"><button type="button" id="Home" class="btn">Home</button></a></li>
+              <li class="nav-item"><a href="/about-us" class="nav-link text-nowrap"><button type="button" id="About Us" class="btn">About Us</button></a></li>
+              <li class="nav-item"><a href="/philosophy" class="nav-link text-nowrap"><button type="button" id="Philosophy" class="btn">Philosophy</button></a></li>
+              <li class="nav-item"><a href="/criteria" class="nav-link text-nowrap"><button type="button" id="Criteria" class="btn">Criteria</button></a></li>
+              <li class="nav-item"><a href="/owners" class="nav-link text-nowrap"><button type="button" id="For Business Owners" class="btn">For Business Owners</button></a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <div class="ig-main-content">
+      <h1 style="padding-bottom: 10px">Our Philosophy</h1>
+      <p></p>
+      <p>We evaluate opportunities based on five criteria: 1) <strong>integrity</strong>, 2) <strong>long-term outlook</strong>, 3) <strong>culture</strong>, 4) <strong>flexibility</strong>, and 5) <strong>management quality</strong>. We are committed to sustainable success through ethical stewardship and respectful collaboration.</p>
+      <p><strong>Integrity</strong> serves as the foundation of the company’s operations, guiding all interactions with transparency and honesty. This fosters trust not only with business partners and clients but also with employees and the communities in which the company operates.</p>
+      <p>The <strong>long-term outlook</strong> reflects the belief that businesses should not only chase short-term gains but also lay the groundwork for future stability and growth. This vision encourages investment in people, processes, and innovation, ensuring that the company adapts and thrives in a constantly evolving marketplace.</p>
+      <p>A <strong>culture</strong> approach underscores the company’s understanding of the intrinsic value of a positive workplace environment. By prioritizing the well-being and development of its employees, the company fosters collaboration and creativity, driving productivity and enhancing job satisfaction.</p>
+      <p><strong>Flexibility</strong> signifies the company’s adaptability in navigating challenges and responding to the unique needs of stakeholders. This allows for tailored solutions that maximize value for all parties while maintaining a harmonious balance throughout the transition and growth phases.</p>
+      <p>Finally, a focus on <strong>management quality</strong> reflects the company’s commitment to strong leadership driven by expertise and experience. This ensures that the right strategies are in place for sustainable growth while nurturing a positive culture and aligning with the company’s core values.</p>
+      <p>Together, these principles reflect a holistic approach to business, valuing ethics and people, embracing change, and emphasizing long-lasting relationships and success. Our approach not only improves organizational performance but also contributes positively to society. Our goal is to leave a meaningful legacy beyond just profits.</p>
+      <p></p>
+    </div>
+    <h6>© 2025 Ledge Partners, All Rights Reserved.</h6>
+    <script src="/js/bootstrap.bundle.min.js"></script>
+    <script src="/js/ignite-core.js"></script>
+  </body>
+</html>
