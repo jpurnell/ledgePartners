@@ -14,11 +14,12 @@ struct MainLayout: Layout {
 		}
         Body {
 			Group {
-				navBar(logo, color: .black)
+				navBar(logo, color: .white)
 					.navigationItemAlignment(.trailing)
 					.navigationBarStyle(.light)
-					.background(.lightGray)
-					.position(.default)
+					.background(.clear)
+					.opacity(0.8)
+					.position(.fixedTop)
 					.padding(.bottom, 16)
 					.id("navigationBar")
 				content
