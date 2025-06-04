@@ -9,16 +9,15 @@ date: 2025-03-13 00:00
 lastModified: 2025-03-13
 published: true
 ---
-### Unlock Your Business’s Potential with Our Strategic Acquisitions
 
 At Ledge Partners, we specialize in acquiring businesses that fit our carefully curated investment criteria. Our mission is to partner with exceptional companies, ensuring a seamless transition while fostering growth and sustainability. 
 
-#### What We Look For
+#### **What We Look For**
 
 **Industry Focus:**  
 We seek opportunities in large, growing, and fragmented industries with a low risk of disruption. Our target sectors include:
 - **Industrials:** Niche manufacturing, value-add distribution, and trades/home services.
-- **Services:** Healthcare services, maintenance services, environmental services, security, and GOVCON businesses serving the federal government.
+- **Services:** Maintenance services, environmental services, security, and GOVCON businesses serving the federal government.
 
 **Business Qualities:**  
 We value businesses with:

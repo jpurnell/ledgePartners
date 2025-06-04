@@ -1,6 +1,6 @@
 ---
 articlePage: MainLayout
-tags: ledge partners, value proposition
+tags: ledge partners, value proposition, valueProposition
 image: /images/background/gile_panorama.jpeg
 imageDescription: A Panorama image from the Gile Mountain Fire Tower in Norwich, VT
 title: Our Value Proposition
