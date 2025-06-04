@@ -18,14 +18,17 @@ struct Home: StaticPage {
 
     var body: some HTML {
 		Section {
+			Card(imageName: "/images/background/gile_panorama.jpeg") {
 				Text{
 					"Ledge Partners is a firm dedicated to acquiring and running an exceptional business for the long run."
 				}
+				.foregroundStyle(.white)
 				.font(.title2)
 				.fontWeight(.bold)
-				.horizontalAlignment(.center)
+			}
+			.contentPosition(.overlay(alignment: .center))
 		}
-		.frame(minWidth: .percent(Percentage(10)), width: .percent(Percentage(100)), maxWidth: .percent(Percentage(100)), height: .percent(Percentage(40)), maxHeight: .percent(Percentage(40)), alignment: .center)
+//		.frame(minWidth: .percent(Percentage(10)), width: .percent(Percentage(100)), maxWidth: .percent(Percentage(100)), height: .percent(Percentage(40)), maxHeight: .percent(Percentage(40)), alignment: .center)
 		.id("hero")
 		Accordion {
 			Item("Philosophy", startsOpen: true) {
