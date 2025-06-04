@@ -1,7 +1,7 @@
 ---
 articlePage: MainLayout
 tags: ledge partners, criteria
-<!--image: /images/background/gile_panorama.jpeg-->
+image: /images/background/gile_panorama.jpeg
 imageDescription: A Panorama image from the Gile Mountain Fire Tower in Norwich, VT
 title: Our Criteria
 link:

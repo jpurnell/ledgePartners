@@ -34,7 +34,7 @@ struct LedgePartners: Site {
     var homePage = Home()
 	var staticPages: [any StaticPage] {
 		AboutUs()
-//		Criteria()
+		Criteria()
 		Home()
 		Philosophy()
 		Owners()

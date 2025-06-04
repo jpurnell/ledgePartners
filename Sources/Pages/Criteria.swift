@@ -6,7 +6,9 @@ struct Criteria: StaticPage {
     var title = "Our Criteria"
 
     var body: some HTML {
-		Text("\(Date().formatted())")
-
+		ForEach(articles.tagged("criteria")) { content in
+			Image(content.image ?? "", description: content.imageDescription).resizable()
+			Text(content.text)
+		}
 	}
 }

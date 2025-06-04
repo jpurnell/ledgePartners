@@ -10,7 +10,7 @@ struct Home: StaticPage {
 				ForEach(articles.tagged(text)) { content in
 //					Text(content.title).font(.title2).fontWeight(.semibold)
 					Text(content.text)
-					Image(content.image ?? "", description: content.imageDescription).resizable()
+//					Image(content.image ?? "", description: content.imageDescription).resizable()
 				}
 			}.id(text)
 		}
