@@ -9,7 +9,7 @@ import Foundation
 import Ignite
 
 @MainActor func navButton(_ text: String, target: any StaticPage) -> Link {
-	return Link(Button(text).buttonSize(.medium).id(text), target: target)
+	return Link(Button(text).buttonSize(.small).id(text), target: target)
 }
 
 @MainActor
