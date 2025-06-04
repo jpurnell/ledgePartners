@@ -25,6 +25,7 @@ struct Home: StaticPage {
 				.fontWeight(.bold)
 				.horizontalAlignment(.center)
 		}
+		.frame(minWidth: .percent(Percentage(10)), width: .percent(Percentage(100)), maxWidth: .percent(Percentage(100)), height: .percent(Percentage(40)), maxHeight: .percent(Percentage(40)), alignment: .center)
 		.id("hero")
 		Accordion {
 			Item("Philosophy", startsOpen: true) {
@@ -36,9 +37,9 @@ struct Home: StaticPage {
 			Item("Value Proposition") {
 				section("valueProposition")
 			}
-			Item("Contact Us") {
-				section("contactUs")
-			}
+//			Item("Contact Us") {
+//				section("contactUs")
+//			}
 		}
 		.openMode(.individual)
 //		section("philosophy")

@@ -23,6 +23,7 @@ struct MainLayout: Layout {
 					.id("navigationBar")
 				content
 //				IgniteFooter()
+				Spacer(size: 100)
 				Text(LedgePartners().copyright ?? "").font(.title6)
 			}/*.background(image: "/images/background/gile_panorama.jpeg", contentMode: .fill, position: .top, repeats: true)*/
 		}
