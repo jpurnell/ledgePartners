@@ -3,7 +3,7 @@ import Ignite
 
 struct MainLayout: Layout {
 	var color: Color = .darkGray
-	var logo: String = navBarString(logoLocation: "/images/logos/ledge_logo.svg", "", "")
+	var logo: String = navBarString(logoLocation: "/images/logos/ledge_logo_white.svg", "", "")
     var body: some Document {
 		Head {
 			MetaTag(name: "description", content: LedgePartners().description)
