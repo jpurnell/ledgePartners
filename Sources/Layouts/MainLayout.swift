@@ -25,7 +25,8 @@ struct MainLayout: Layout {
 				content
 //				IgniteFooter()
 				Spacer(size: 100)
-				Text(LedgePartners().copyright ?? "").font(.title6)
+//				Text(LedgePartners().copyright ?? "").font(.title6)
+				Copyright()
 			}/*.background(image: "/images/background/gile_panorama.jpeg", contentMode: .fill, position: .top, repeats: true)*/
 		}
     }

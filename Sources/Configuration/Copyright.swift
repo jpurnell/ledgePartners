@@ -8,21 +8,21 @@
 import Foundation
 import Ignite
 
-public struct Copyright: Component {
+public struct Copyright: HTML {
+	public init() {}
 	var calendar: Calendar = .current
 	var year: Int { return Calendar.current.component(.year, from: Date())}
 	
-	public func body(context: PublishingContext) -> [any PageElement] {
+	public var body: some HTML {
 			//		Section {
 		Text {
-			"© \(year) Princeton Class of 2000. All Rights Reserved."
-		}.font(.title6).foregroundStyle(.tertiary).addCustomAttribute(name: "style", value:  "font: 1rem/4.0;")
+			"© \(year) Ledge Partners, All Rights Reserved."
+		}
+		.attribute("style", "font-size: 0.4rem;")
 		Text {
 			"Created with "
-			Link("Ignite", target: URL("https://github.com/twostraws/Ignite"))
-		}.font(.title6).foregroundStyle(.tertiary).addCustomAttribute(name: "style", value:  "font: 1rem/4.0;")
+			Link("Ignite", target: "https://github.com/twostraws/Ignite")
+		}
+		.attribute("style", "font-size: 0.4rem;")
 	}
-	
-	public init() {}
-	
 }

@@ -5,3 +5,49 @@ body {
 /*	opacity: 0.3;*/
 /*	color: white;*/
 }
+
+
+a {
+	color: #EE7F2D;
+	text-decoration: none;
+}
+
+a:link {
+	
+}
+
+a:visited {
+/*	color: var(--bs-black);*/
+/*	text-decoration: none;*/
+}
+
+a:hover {
+	color: var(--bs-black);
+/*	text-decoration: none;*/
+
+}
+
+a:active {
+	 text-decoration: none;
+}
+
+
+.accordion-button:not(.collapsed) {
+	border-style: none;
+	color: #EE7F2D;
+	font-weight: bold;
+	background-color: var(--bs-border-color-translucent)
+}
+
+.btn btn-sm {
+	border-style: none;
+	color: #EE7F2D;
+	font-weight: bold;
+/*	background-color: var(--bs-border-color-translucent)*/
+	background-color: #000000;
+}
+
+.text-body-tertiary {
+/*	color: #EE7F2D;*/
+	font-size: 0.4rem
+}

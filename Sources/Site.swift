@@ -38,6 +38,7 @@ struct LedgePartners: Site {
 		Home()
 		Philosophy()
 		Owners()
+		Careers()
 		Intermediaries()
 	}
 	

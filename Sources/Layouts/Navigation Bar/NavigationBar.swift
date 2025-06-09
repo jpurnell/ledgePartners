@@ -8,20 +8,18 @@
 import Foundation
 import Ignite
 
-@MainActor func navButton(_ text: String, target: any StaticPage, color: Color = .black) -> Link {
-	return Link(Button(text).buttonSize(.small).foregroundStyle(color).fontWeight(.semibold).id(text), target: target)
+@MainActor func navButton(_ text: String, target: any StaticPage, _ color: Color = .black, _ buttonSize: Button.Size = .medium, _ fontWeight: Font.Weight = .semibold) -> Link {
+	return Link(Button(text).buttonSize(buttonSize).foregroundStyle(color).fontWeight(fontWeight).id(text), target: target)
 }
 
 @MainActor
 func navBar(_ logo: String? = nil, color: Color = .black) -> NavigationBar {
 	NavigationBar(logo: logo) {
-		navButton("Home", target: Home(), color: color)
-		navButton("About Us", target: AboutUs(), color: color)
-		navButton("Philosophy", target: Philosophy(), color: color)
-		navButton("Criteria", target: Criteria(), color: color)
-		navButton("For Business Owners", target: Owners(), color: color)
-//		navButton("Intermediaries", target: Intermediaries())
+		navButton("Home", target: Home(), color)
+		navButton("About Us", target: AboutUs(), color)
+		navButton("Philosophy", target: Philosophy(), color)
+		navButton("Criteria", target: Criteria(), color)
+		navButton("For Business Owners", target: Owners(), color)
 	}
 	.navigationItemAlignment(.trailing)
-	.navigationBarStyle(.light)
 }

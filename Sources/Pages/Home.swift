@@ -40,14 +40,13 @@ struct Home: StaticPage {
 			Item("Value Proposition") {
 				section("valueProposition")
 			}
-//			Item("Contact Us") {
-//				section("contactUs")
-//			}
+			Item("Contact Us") {
+				section("contact us")
+			}
 		}
 		.openMode(.individual)
 //		section("philosophy")
 //		section("criteria")
 //		section("valueProposition")
-//		section("contactUs")
     }
 }
