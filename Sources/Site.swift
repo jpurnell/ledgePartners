@@ -39,6 +39,7 @@ struct LedgePartners: Site {
 		Philosophy()
 		Owners()
 		Careers()
+		ContactUs()
 		Intermediaries()
 	}
 	

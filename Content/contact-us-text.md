@@ -10,4 +10,4 @@ lastModified: 2025-03-13
 published: true
 ---
 
-Interested? [Get in touch](mailto:justin@ledgepartners.com?subject=[Ledge%20Partners]%20Inquiry).
+Interested in learning more about Ledge? We'd love to talk.

@@ -41,7 +41,8 @@ struct Home: StaticPage {
 				section("valueProposition")
 			}
 			Item("Contact Us") {
-				section("contact us")
+//				section("contact us")
+				Include("contact.html")
 			}
 		}
 		.openMode(.individual)

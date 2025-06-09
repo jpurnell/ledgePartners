@@ -20,6 +20,7 @@ func navBar(_ logo: String? = nil, color: Color = .black) -> NavigationBar {
 		navButton("Philosophy", target: Philosophy(), color)
 		navButton("Criteria", target: Criteria(), color)
 		navButton("For Business Owners", target: Owners(), color)
+		navButton("Contact Us", target: ContactUs(), color)
 	}
 	.navigationItemAlignment(.trailing)
 }
