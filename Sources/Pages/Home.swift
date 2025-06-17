@@ -18,36 +18,43 @@ struct Home: StaticPage {
 
     var body: some HTML {
 		Section {
-			Card(imageName: "/images/background/gile_panorama.jpeg") {
-				Text{
-					"Ledge Partners is a firm dedicated to acquiring and running an exceptional business for the long run."
+				ZStack {
+					Image("/images/background/gile_panorama_crop.webp", description: "View from Gile Mountain Fire Tower").resizable()
+					Text("Ledge Partners is a firm dedicated to acquiring and running an exceptional business for the long run.").font(.title5).fontWeight(.semibold)
+					.horizontalAlignment(.center)
+					.padding(.top, 70)
+					.padding(.horizontal, 60)
+					.foregroundStyle(.white)
+					.containerRelativeFrame()
+//					.background(.ultraThinMaterial.colorScheme(.dark))
 				}
-				.foregroundStyle(.white)
-				.font(.title2)
-				.fontWeight(.bold)
-			}
-			.contentPosition(.overlay(alignment: .center))
 		}
-//		.frame(minWidth: .percent(Percentage(10)), width: .percent(Percentage(100)), maxWidth: .percent(Percentage(100)), height: .percent(Percentage(40)), maxHeight: .percent(Percentage(40)), alignment: .center)
 		.id("hero")
-		Accordion {
-			Item("Philosophy", startsOpen: true) {
-				section("philosophy")
-			}
-			Item("Our Criteria") {
-				section("criteria")
-			}
-			Item("Value Proposition") {
-				section("valueProposition")
-			}
-			Item("Contact Us") {
-//				section("contact us")
-				Include("contact.html")
-			}
+//		Section {
+//			Text("Ledge Partners is a firm dedicated to acquiring and running an exceptional business for the long run.").font(.title2).fontWeight(.semibold)
+//		}
+//		.id("Contact Us")
+//		.padding(.horizontal, 120)
+//		.padding(.vertical, 20)
+//		.foregroundStyle(.princetonOrange)
+//		.background(.ultraThinMaterial.colorScheme(.light))
+//		.horizontalAlignment(.center)
+		Section {
+			Text("About Us".uppercased()).foregroundStyle(.princetonOrange).font(.xSmall).fontWeight(.semibold)
+			Divider()
+			Text(markdown: "At Ledge Partners, we specialize in acquiring businesses that fit our carefully curated investment criteria. Our mission is to partner with exceptional companies, ensuring a seamless transition while fostering growth and sustainability. ")
+				.font(.small).fontWeight(.light)
+			Spacer(size: 10)
+			Text {
+				Link("Read More".uppercased(), target: AboutUs())
+					.target(.blank)
+			}.font(.xxSmall).foregroundStyle(.princetonOrange)
 		}
-		.openMode(.individual)
-//		section("philosophy")
-//		section("criteria")
-//		section("valueProposition")
+		.id("About Us")
+		.padding(.horizontal, 120)
+		.padding(.vertical, 20)
+		.foregroundStyle(.foregroundGray)
+		.background(.backgroundGray)
+		.horizontalAlignment(.center)
     }
 }

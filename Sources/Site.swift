@@ -37,7 +37,7 @@ struct LedgePartners: Site {
 		Criteria()
 		Home()
 		Philosophy()
-		Owners()
+//		Owners()
 		Careers()
 		ContactUs()
 		Intermediaries()
