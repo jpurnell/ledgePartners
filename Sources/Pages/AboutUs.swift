@@ -10,7 +10,7 @@ struct AboutUs: StaticPage {
 		Image("/images/background/gile_panorama_crop.webp", description: "Gile Mountain Fire Tower View").resizable()
 		ForEach(articles.tagged("about us")) { content in
 			Section {
-				Text("Our Team".uppercased()).foregroundStyle(.princetonOrange).font(.small).fontWeight(.semibold)
+				Text("Leadership".uppercased()).foregroundStyle(.princetonOrange).font(.small).fontWeight(.semibold)
 				Divider()
 				Text(content.text)
 			}

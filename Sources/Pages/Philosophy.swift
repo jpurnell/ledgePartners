@@ -15,7 +15,7 @@ struct Philosophy: StaticPage {
 		Section {
 			Text("Our Philosophy".uppercased()).foregroundStyle(.princetonOrange).font(.small).fontWeight(.semibold)
 			Divider()
-			Text(markdown: "Regardless of industry or size, we manage any operation according to five principles: 1) **integrity**, 2) **long-term focus**, 3) **culture**, 4) **flexibility**, and 5) **management quality**. We are committed to sustainable success through ethical stewardship and respectful collaboration.")
+			Text(markdown: "Regardless of industry or size, we manage any operation according to five principles: **integrity**, **long-term focus**, **culture**, **flexibility**, and **management quality**. We are committed to sustainable success through a holistic approach that prioritizes ethical stewardship and respectful collaboration.")
 				.font(.small).fontWeight(.light)
 		}
 		.id("Our Philosophy")
