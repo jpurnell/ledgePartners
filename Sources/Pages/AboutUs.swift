@@ -28,6 +28,7 @@ struct AboutUs: StaticPage {
 //				Divider()
 				Text(markdown: "Our core beliefs lie at the foundation of our operating philosophy and are embedded in every facet of Ledge Partners. ")
 					.font(.xSmall).fontWeight(.light)
+				Divider()
 			}
 			.id("Our Core Beliefs")
 			.padding(.horizontal, 120)
