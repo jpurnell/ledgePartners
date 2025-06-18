@@ -24,7 +24,7 @@ struct MainLayout: Layout {
 					.id("navigationBar")
 				content
 //				IgniteFooter()
-//				Spacer(size: 100)
+				Spacer(size: 300)
 				Text {
 					"© 2025 Ledge Partners, All Rights Reserved."
 					" | "
@@ -39,6 +39,7 @@ struct MainLayout: Layout {
 				.foregroundStyle(.white)
 				.horizontalAlignment(.trailing)
 				.padding(20)
+//				.frame(alignment: .bottomTrailing)
 				.id("Footer")
 //				navBar("© 2025 Ledge Partners, All Rights Reserved.", links: [("Terms & Conditions", TermsAndConditions()), ("Privacy Policy", PrivacyPolicy())], color: .white).background(.lightGray).foregroundStyle(.white).font(.xxxSmall).opacity(1.0).id("Footer")
 			}
