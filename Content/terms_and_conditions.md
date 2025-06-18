@@ -73,4 +73,4 @@ These Terms contain the entire agreement between us relating to the subject matt
 
 The section titles in these Terms are for convenience only and have no legal or contractual effect.
 
-Ledge Partners is committed to providing the best possible experience for users of our Site. If You observe material or behavior that may violate one of the Ledge Partners Terms, including without limitation material that You believe may be infringing another’s rights, please contact Web Master, Ledge Partners, via the "Contact Us" page on the Site.
+Ledge Partners is committed to providing the best possible experience for users of our Site. If You observe material or behavior that may violate one of the Ledge Partners Terms, including without limitation material that You believe may be infringing another’s rights, please contact Web Master, Ledge Partners, via the [Contact Us](/contact-us) page on the Site.

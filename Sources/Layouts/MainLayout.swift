@@ -14,7 +14,7 @@ struct MainLayout: Layout {
 		}
         Body {
 			Group {
-				navBar(logo, color: .white)
+				navBar(logo, links: [("Home", Home()), ("About Us", AboutUs()), ("Philosophy", Philosophy()), ("Criteria", Criteria()), ("Contact Us", ContactUs())], color: .white)
 					.navigationItemAlignment(.trailing)
 					.navigationBarStyle(.light)
 					.background(.clear)
@@ -24,10 +24,25 @@ struct MainLayout: Layout {
 					.id("navigationBar")
 				content
 //				IgniteFooter()
-				Spacer(size: 100)
-//				Text(LedgePartners().copyright ?? "").font(.title6)
-				Copyright()
-			}/*.background(image: "/images/background/gile_panorama.jpeg", contentMode: .fill, position: .top, repeats: true)*/
+//				Spacer(size: 100)
+				Text {
+					"© 2025 Ledge Partners, All Rights Reserved."
+					" | "
+					Link("Terms & Conditions", target: TermsAndConditions())
+					" | "
+					Link("Privacy Policy", target: PrivacyPolicy())
+					" | "
+					Link("Created with Ignite", target: URL(static: "https://github.com/twostraws/Ignite"))
+				}
+				.font(.xxSmall)
+				.background(.lightGray)
+				.foregroundStyle(.white)
+				.horizontalAlignment(.trailing)
+				.padding(20)
+				.id("Footer")
+//				navBar("© 2025 Ledge Partners, All Rights Reserved.", links: [("Terms & Conditions", TermsAndConditions()), ("Privacy Policy", PrivacyPolicy())], color: .white).background(.lightGray).foregroundStyle(.white).font(.xxxSmall).opacity(1.0).id("Footer")
+			}
+			
 		}
     }
 }

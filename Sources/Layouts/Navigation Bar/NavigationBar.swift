@@ -13,14 +13,9 @@ import Ignite
 }
 
 @MainActor
-func navBar(_ logo: String? = nil, color: Color = .black) -> NavigationBar {
+func navBar(_ logo: String? = nil, links: [(String, any StaticPage)], color: Color = .black) -> NavigationBar {
 	NavigationBar(logo: logo) {
-		navButton("Home", target: Home(), color)
-		navButton("About Us", target: AboutUs(), color)
-		navButton("Philosophy", target: Philosophy(), color)
-		navButton("Criteria", target: Criteria(), color)
-//		navButton("For Business Owners", target: Owners(), color)
-		navButton("Contact Us", target: ContactUs(), color)
+		return links.flatMap({navButton($0.0, target: $0.1, color)})
 	}
 	.navigationItemAlignment(.trailing)
 }

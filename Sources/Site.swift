@@ -42,6 +42,7 @@ struct LedgePartners: Site {
 		ContactUs()
 		Intermediaries()
 		TermsAndConditions()
+		PrivacyPolicy()
 	}
 	
 	var articlePages: [any ArticlePage] {
