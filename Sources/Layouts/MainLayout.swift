@@ -35,8 +35,8 @@ struct MainLayout: Layout {
 					Link("Created with Ignite", target: URL(static: "https://github.com/twostraws/Ignite"))
 				}
 				.font(.xxSmall)
-				.background(.lightGray)
-				.foregroundStyle(.white)
+				.background(.clear)
+				.foregroundStyle(.foregroundGray)
 				.horizontalAlignment(.trailing)
 				.padding(20)
 //				.frame(alignment: .bottomTrailing)
